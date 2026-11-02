@@ -1,8 +1,8 @@
 /* ---------- Colors: change these to restyle the whole site ---------- */
 :root {
   --bg: #f5f7fa;
-  --text: #1c2430;
-  --muted: #5b6676;
+  --text: #14284b;   /* navy blue */
+  --muted: #4a5d80;  /* softer navy for secondary text */
   --accent: #2f5bea;
   --line: #dde2ea;
 }
