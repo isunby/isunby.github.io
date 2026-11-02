@@ -6,15 +6,6 @@
   --accent: #2f5bea;
   --line: #dde2ea;
 }
-@media (prefers-color-scheme: light) {
-  :root {
-  --bg: #f5f7fa;
-  --text: #14284b;   /* navy blue */
-  --muted: #4a5d80;  /* softer navy for secondary text */
-  --accent: #2f5bea;
-  --line: #dde2ea;
-}
-}
 
 /* ---------- Base ---------- */
 * { box-sizing: border-box; }
