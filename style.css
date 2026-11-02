@@ -6,14 +6,14 @@
   --accent: #2f5bea;
   --line: #dde2ea;
 }
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --bg: #12161c;
-    --text: #e8ecf2;
-    --muted: #9aa5b5;
-    --accent: #7b9bff;
-    --line: #262d38;
-  }
+  --bg: #f5f7fa;
+  --text: #14284b;   /* navy blue */
+  --muted: #4a5d80;  /* softer navy for secondary text */
+  --accent: #2f5bea;
+  --line: #dde2ea;
+}
 }
 
 /* ---------- Base ---------- */
