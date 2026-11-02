@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact · Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <a class="logo" href="index.html">Your Name</a>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="page-title">Contact</h1>
+      <p>
+        The best way to reach me is by email at
+        <a href="mailto:you@example.com">you@example.com</a>.
+      </p>
+      <p>
+        You can also find me on
+        <a href="https://github.com/your-username">GitHub</a> and
+        <a href="https://www.linkedin.com/in/your-username">LinkedIn</a>.
+      </p>
+    </main>
+
+    <footer>© <span id="year"></span> Your Name</footer>
+
+  </div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

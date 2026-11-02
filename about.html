@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <a class="logo" href="index.html">Your Name</a>
+      <nav>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="page-title">About</h1>
+      <p>
+        Write a few sentences about yourself here: what you do, what you’re
+        interested in, and what you’re working on right now.
+      </p>
+      <p>
+        Add a second paragraph if you like: your background, hobbies, or
+        what you’re hoping to learn next.
+      </p>
+    </main>
+
+    <footer>© <span id="year"></span> Your Name</footer>
+
+  </div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
