@@ -21,21 +21,6 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
 .wrap { max-width: 680px; margin: 0 auto; padding: 0 1.5rem; }
 
-.hero {
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
-  padding: 3rem 0 1.5rem;
-}
-
-.hero-photo {
-  width: 180px;
-  height: 240px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-
 /* ---------- Header / nav ---------- */
 header {
   display: flex;
@@ -70,10 +55,35 @@ h1, h2 {
 }
 h1 { font-size: clamp(2.5rem, 8vw, 4rem); margin: 4rem 0 1rem; }
 h2 { font-size: 1.6rem; margin: 0 0 1rem; }
-.intro { font-size: 1.2rem; color: var(--muted); max-width: 32rem; }
+.intro { font-size: 1.1rem; color: var(--muted); }
 
 main { padding: 1rem 0 3rem; }
 .page-title { font-size: clamp(2rem, 6vw, 2.75rem); margin: 3rem 0 1.5rem; }
+
+/* ---------- Home hero: oval photo left, text right ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 3rem 0 1.5rem;
+}
+.hero-photo {
+  width: 180px;
+  height: 240px;          /* taller than wide = oval */
+  border-radius: 50%;
+  object-fit: cover;      /* crops the photo to fit without stretching */
+  flex-shrink: 0;
+  border: 3px solid var(--line);
+}
+.hero h1 { margin: 0; font-size: clamp(2rem, 6vw, 3rem); }
+
+/* On phones, stack the photo above the text */
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 /* ---------- Projects ---------- */
 .project { margin-bottom: 1.75rem; }
